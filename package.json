@@ -1,0 +1,11 @@
+{
+    "scripts": {
+        "start": "tsc && node ./target/main.js"
+    },
+    "dependencies": {
+        "@formatjs/icu-messageformat-parser": "^2.0.15",
+        "fp-ts": "^2.11.5",
+        "intl-messageformat": "^9.10.0",
+        "typescript": "^4.5.2"
+    }
+}

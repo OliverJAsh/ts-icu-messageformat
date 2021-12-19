@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitReturns": true,
+        "exactOptionalPropertyTypes": true,
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "module": "CommonJS",
+
+        "outDir": "./target/"
+    }
+}
