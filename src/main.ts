@@ -1,6 +1,6 @@
 import * as IntlMessageFormat from "intl-messageformat";
+import { printAST } from "@formatjs/icu-messageformat-parser/printer";
 import * as P from "./builder";
-import { formatElements } from "./formatters";
 
 const builder = P.arg("name")
     .then(P.lit(" uploaded "))
@@ -27,7 +27,7 @@ const builder = P.arg("name")
 const ast = P.build(builder);
 console.log(JSON.stringify(ast, null, "\t"));
 
-const string = formatElements(ast);
+const string = printAST(ast);
 console.log(string);
 
 type Values = P.ValuesOf<typeof builder>;
